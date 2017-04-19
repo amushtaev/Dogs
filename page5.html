@@ -32,8 +32,8 @@
         <a class="e" href="page1.html"></a>
         <div class="collapse f" id="navbarResponsive">
             <ul class="navbar-nav ain">
-                <li class="qx active">
-                    <a class="qv" href="page1a.html">page1a.html <span class="aet">(current)</span></a>
+                <li class="qx">
+                    <a class="qv" href="page1a.html">page1a.html</a>
                 </li>
                 <li class="qx">
                     <a class="qv" href="page2a.html">page2a.html</a>
@@ -42,7 +42,7 @@
                     <a class="qv" href="page3a.html">page3a.html</a>
                 </li>
                 <li class="qx">
-                    <a class="qv" href="page4a.html">page4a.html</a>
+                    <a class="qv active" href="page4a.html">page4a.html</a>
                 </li>
                 <li class="qx">
                     <a class="qv" href="page5a.html">page5a.html</a>
@@ -162,45 +162,72 @@
                                     <h5 class="rr-round">4</h5>
                                 </div>
                             </div>
+
+
                     </li>
                     <li class="tu b ahx">
                         <div class="form-control">
                             <form action="page4.html">
-                                <div class="input-group col-md-6 float-left matgin-top-20">
+                                <div class="input-group col-md-6 float-left matgin-top-20 ">
                                     <span class="input-group-addon">
-                                        Имя
+                                        Пол собаки
                                     </span>
-                                    <input required id="name" type="text" class="form-control placeholder red-border" placeholder="Имя" aria-describedby="basic-addon1">
+                                    <select class="selectpicker form-control red-border">
+                                        <option>male</option>
+                                        <option>female</option>
+                                    </select>
+                                    <input id="sex" required type="text" class="form-control" aria-describedby="basic-addon1" style="display: none;">
                                 </div>
-
+                                <div class="input-group col-md-6 float-left matgin-top-20">
+                                    <span class="input-group-addon input-group-addonal">Дата рождения собаки</span>
+                                    <div class='input-group date' id='datetimepicker1'>
+                                        <input required id="dob" placeholder="Дата рождения собаки" type='text' class="form-control red-border" />
+                                        <span class="input-group-addon calendar">
+                                            <span class="h bbu"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="input-group col-md-12" style="margin: 0;padding: 0;">
+                                    
+                                </div>
                                 <div class="input-group col-md-6 float-left matgin-top-20">
                                     <span class="input-group-addon">
-                                        Фамилия
+                                        Полная кличка собаки
                                     </span>
-                                    <input required id="surname" type="text" class="form-control placeholder red-border" placeholder="Фамилия" aria-describedby="basic-addon1">
+                                    <input id="name" required type="text" class="form-control red-border" placeholder="Полная кличка собаки" aria-describedby="basic-addon1">
+                                </div>
+                                <div class="input-group col-md-6 float-left matgin-top-20">
+                                    <span class="input-group-addon input-group-addonal">Бытовая кличка</span>
+                                    <input id="nickname" type="text" class="form-control" placeholder="бытовая кличка" aria-describedby="basic-addon1">
+                                </div>
+                                <div class="input-group col-md-6 float-left matgin-top-20">
+                                    <span class="input-group-addon">
+                                        Папа собаки
+                                    </span>
+                                    <input id="nickname" class="form-control bs-autocomplete" value="" placeholder="Type the first two characters of name..." type="text" data-hidden_field_id="city-code" data-item_id="id" data-item_label="cityName" autocomplete="off">
+                                </div>
+                                <div class="input-group col-md-6 float-left matgin-top-20">
+                                    <span class="input-group-addon input-group-addonal">Мама собаки</span>
+                                    <input required class="form-control bs-autocomplete" id="father" value="" placeholder="Type the first two characters of name..." type="text" data-hidden_field_id="city-code" data-item_id="id" data-item_label="cityName" autocomplete="off">
+
                                 </div>
                                 <br />
                                 <div class="input-group col-md-6 float-left matgin-top-20">
-                                    <span class="input-group-addon">
-                                        nickname
-                                    </span>
-                                    <input id="nickname" type="text" class="form-control" placeholder="nickname" aria-describedby="basic-addon1">
+                                    <span class="input-group-addon input-group-addonal">Ссылка на родословную помета</span>
+                                    <input id="pedigree" type="text" class="form-control" placeholder="Ссылка на родословную помета" aria-describedby="basic-addon1">
                                 </div>
                                 <div class="input-group col-md-6 float-left matgin-top-20">
-                                    <span class="input-group-addon input-group-addonal">О себе</span>
-                                    <input id="description" type="text" class="form-control red-border" placeholder="О себе" aria-describedby="basic-addon1">
-                                </div>
-                                <br />
-                                <div class="input-group col-md-6 float-left matgin-top-20">
-                                    <span class="input-group-addon btn-primary btn">Загрузить фото</span>
-                                    <input id="photo" type="text" class="form-control" placeholder="Ссылка" aria-describedby="basic-addon1">
-
+                                    <span class="input-group-addon input-group-addonal">Микрочип </span>
+                                    <input id="mikrochip" type="text" class="form-control" placeholder="Микрочип " aria-describedby="basic-addon1">
                                 </div>
                                 <div class="input-group col-md-6 float-left matgin-top-20">
-                                    <span class="input-group-addon btn-primary btn">Фото фона</span>
-                                    <input id="background" type="text" class="form-control" placeholder="Ссылка" aria-describedby="basic-addon1">
+                                    <span class="input-group-addon input-group-addonal">Клеймо </span>
+                                    <input id="tattoo" type="text" class="form-control" placeholder="Клеймо " aria-describedby="basic-addon1">
                                 </div>
-
+                                <div class="input-group col-md-6 float-left matgin-top-20">
+                                    <span class="input-group-addon input-group-addonal">Окрас </span>
+                                    <input id="color" type="text" class="form-control" placeholder="Окрас " aria-describedby="basic-addon1">
+                                </div>
                                 <div class="input-group col-md-6 float-lef matgin-top-20 next_01_input">
                                     <input class="form-control  matgin-top-20 btn-bi btn-lg btn-primary" type="submit" value="next">
                                 </div>
@@ -212,54 +239,75 @@
                         <div class="form-control">
                             <form action="page4.html">
                                 <div class="input-group col-md-6 float-left matgin-top-20">
-                                    <span class="input-group-addon input-group-addonal">Страна проживания</span>
-                                    <input required id="country" type="text" class="form-control placeholder red-border" placeholder="Страна проживания" aria-describedby="basic-addon1">
-
+                                    <span class="input-group-addon">
+                                        Номер родословной
+                                    </span>
+                                    <input id="ped_number" type="text" class="form-control placeholder" placeholder="Номер родословной" aria-describedby="basic-addon1">
                                 </div>
                                 <div class="input-group col-md-6 float-left matgin-top-20">
                                     <span class="input-group-addon">
-                                        Регион
+                                        Номер регистрации
                                     </span>
-                                    <input required id="region" type="text" class="form-control placeholder red-border" placeholder="Регион" aria-describedby="basic-addon1">
+                                    <input id="ped_registration_number" type="text" class="form-control placeholder" placeholder="Номер регистрации" aria-describedby="basic-addon1">
                                 </div>
-
-                                <div class="input-group col-md-6 float-left matgin-top-20">
+                                <div class="input-group col-md-6 float-left matgin-top-20 ">
                                     <span class="input-group-addon">
-                                        Город
+                                        Класс племенного качества
                                     </span>
-                                    <input required id="city" type="text" class="form-control placeholder red-border" placeholder="Город" aria-describedby="basic-addon1">
+                                    <select class="selectpicker form-control red-border">
+                                        <option>show </option>
+                                        <option>breed </option>
+                                        <option>pet </option>
+                                    </select>
+                                    <input required id="breed_class" type="text" class="form-control" aria-describedby="basic-addon1" style="display: none;">
+                                </div>
+                                <div class="input-group col-md-6 float-left matgin-top-20 ">
+                                    <span class="input-group-addon">
+                                        Участие в разделе
+                                    </span>
+                                    <select class="selectpicker form-control">
+                                        <option>Наши чемпионы </option>
+                                        <option>Зал славы </option>
+                                        <option>Наша гордость </option>
+                                    </select>
+                                    <input id="haw" type="text" class="form-control" aria-describedby="basic-addon1" style="display: none;">
                                 </div>
                                 <br />
                                 <div class="input-group col-md-6 float-left matgin-top-20">
-                                    <span class="input-group-addon">
-                                        Адрес
-                                    </span>
-                                    <input id="address" type="text" class="form-control" placeholder="Адрес" aria-describedby="basic-addon1">
-                                </div>
-                                <div class="input-group col-md-6 float-left matgin-top-20">
-                                    <span class="input-group-addon input-group-addonal">Координаты на Google Maps</span>
-                                    <input id="map" type="text" class="form-control" placeholder="Координаты на Google Maps" aria-describedby="basic-addon1">
-                                </div>
-                                <br />
-                                <div class="input-group col-md-6 float-left matgin-top-20">
-                                    <span class="input-group-addon">
-                                        Электронная почта
-                                    </span>
-                                    <input required id="email" type="text" class="form-control red-border" placeholder="Подтвержденная электронная почта" aria-describedby="basic-addon1">
-                                </div>
-                                <div class="input-group col-md-6 float-left matgin-top-20">
-                                    <span class="input-group-addon">
-                                        Ссылка на страницу facebook
-                                    </span>
-                                    <input id="facebook" type="text" class="form-control" placeholder="Ссылка на страницу facebook" aria-describedby="basic-addon1">
-                                </div>
-                                <div class="input-group col-md-6 float-left matgin-top-20">
-                                    <span class="input-group-addon">
-                                        Ссылка на страницу vk
-                                    </span>
-                                    <input id="vk" type="text" class="form-control" placeholder="Ссылка на страницу vk" aria-describedby="basic-addon1">
-                                </div>
+                                    <span class="input-group-addon input-group-addonal">собака стерилизована</span>
+                                    <input required id="sterilized" type="text" class="form-control red-border" placeholder="собака стерилизована" aria-describedby="basic-addon1">
 
+                                </div>
+                                <div class="input-group col-md-6 float-left matgin-top-20">
+                                    <span class="input-group-addon">
+                                        радуга
+                                    </span>
+                                    <input id="rainbowl" type="text" class="form-control" placeholder="радуга" aria-describedby="basic-addon1">
+                                </div>
+                                <div class="input-group col-md-6 float-left matgin-top-20">
+                                    <span class="input-group-addon">
+                                        цена продажи
+                                    </span>
+                                    <input required id="price" type="text" class="form-control red-border" placeholder="цена продажи" aria-describedby="basic-addon1">
+                                </div>
+                                <div class="input-group col-md-6 float-left matgin-top-20">
+                                    <span class="input-group-addon">
+                                        валюта продажи
+                                    </span>
+                                    <input id="price" required type="text" class="form-control red-border" placeholder="валюта продажи" aria-describedby="basic-addon1">
+                                </div>
+                                <div class="input-group col-md-6 float-left matgin-top-20">
+                                    <span class="input-group-addon">
+                                        текущий статус собаки
+                                    </span>
+                                    <input required id="currency" type="text" class="form-control red-border" placeholder="Ссылка на сайт питомника" aria-describedby="basic-addon1">
+                                </div>
+                                <div class="input-group col-md-6 float-left matgin-top-20">
+                                    <span class="input-group-addon">
+                                        О собаке
+                                    </span>
+                                    <input id="description" type="text" class="form-control placeholder" placeholder="О собаке" aria-describedby="basic-addon1">
+                                </div>
                                 <div class="input-group col-md-6 float-lef matgin-top-20 next_02_input">
                                     <input class="form-control  matgin-top-20 btn-bi btn-lg btn-primary" type="submit" value="next">
                                 </div>
@@ -270,58 +318,19 @@
                     <li class="tu b ahx next_02" style="display: none;">
                         <div class="form-control">
                             <div class="input-group col-md-6 float-left matgin-top-20">
-                                <span class="input-group-addon">
-                                    Ссылка на страницу ok
-                                </span>
-                                <input id="ok" type="text" class="form-control" placeholder="Ссылка на страницу ok" aria-describedby="basic-addon1">
-                            </div>
-                            <div class="input-group col-md-6 float-left matgin-top-20">
-                                <span class="input-group-addon">
-                                    Ссылка на личную страницу
-                                </span>
-                                <input id="site" type="text" class="form-control" placeholder="Ссылка на личную страницу" aria-describedby="basic-addon1">
-                            </div>
-                            <div class="input-group col-md-6 float-left matgin-top-20">
-                                <span class="input-group-addon input-group-addonal">Телефон</span>
-                                <input id="phone" required type="text" class="form-control red-border" placeholder="Подтвержденный через СМС номер телефона" aria-describedby="basic-addon1">
+                                <span class="input-group-addon input-group-addonal">Титулы собаки собаки</span>
+                                <input class="form-control bs-autocomplete" id="titles" value="" placeholder="Type the first two characters of name..." type="text" data-hidden_field_id="city-code" data-item_id="id" data-item_label="cityName" autocomplete="off">
 
                             </div>
                             <div class="input-group col-md-6 float-left matgin-top-20">
                                 <span class="input-group-addon">
-                                    Доп. номер телефон
+                                    Ссылка на фотогаллерею
                                 </span>
-                                <input id="phone2" type="text" class="form-control placeholder" placeholder="Дополнительный номер телефона" aria-describedby="basic-addon1">
-                            </div>
-
-                            <div class="input-group col-md-6 float-left matgin-top-20">
-                                <span class="input-group-addon">
-                                    Номер viber
-                                </span>
-                                <input id="viber" type="text" class="form-control placeholder" placeholder="Номер viber" aria-describedby="basic-addon1">
-                            </div>
-                            <br />
-                            <div class="input-group col-md-6 float-left matgin-top-20">
-                                <span class="input-group-addon">
-                                    Номер skype
-                                </span>
-                                <input id="skype" type="text" class="form-control" placeholder="Номер skype" aria-describedby="basic-addon1">
+                                <input id="photo" type="text" class="form-control" placeholder="Ссылка на фотогаллерею" aria-describedby="basic-addon1">
                             </div>
                             <div class="input-group col-md-6 float-left matgin-top-20">
-                                <span class="input-group-addon">
-                                    радуга
-                                </span>
-                                <input id="rainbow" type="text" class="form-control" placeholder="радуга" aria-describedby="basic-addon1">
-                            </div>
-                            <div class="input-group col-md-6 float-left matgin-top-20 ">
-                                <span class="input-group-addon">
-                                    Участие в разделе
-                                </span>
-                                <select class="selectpicker form-control">
-                                    <option>Наши чемпионы </option>
-                                    <option>Зал славы </option>
-                                    <option>Наша гордость </option>
-                                </select>
-                                <input id="haw" type="text" class="form-control" aria-describedby="basic-addon1" style="display: none;">
+                                <span class="input-group-addon">Ссылка на видеогаллерею </span>
+                                <input id="video" type="text" class="form-control" placeholder="Ссылка на видеогаллерею" aria-describedby="basic-addon1">
                             </div>
                             <div class="input-group col-md-6 float-left matgin-top-20">
                                 <span class="input-group-addon">
@@ -329,16 +338,13 @@
                                 </span>
                                 <input id="news" type="text" class="form-control" placeholder="Ссылка на ленту событий" aria-describedby="basic-addon1">
                             </div>
-                            <input id="kennel" type="text" class="form-control" aria-describedby="basic-addon1" style="display: none;">
                         </div>
                     </li>
-                    <form action="page4.html">
-                        <li class="tu b ahx next_02" style="display: none;">
-                            <div class="input-group col-md-6 float-right matgin-top-20">
-                                <input class="form-control  matgin-top-20 btn-bi btn-lg btn-primary" type="submit" value="next">
-                            </div>
-                        </li>
-                    </form>
+                    <li class="tu b ahx next_02" style="display: none;">
+                        <div class="input-group col-md-6 float-right matgin-top-20">
+                            <input class="form-control  matgin-top-20 btn-bi btn-lg btn-primary" type="submit" value="next">
+                        </div>
+                    </li>
                     <li class="tu b ahx">
                         <div class="fk-t">
                             <div class="rq">
@@ -357,7 +363,6 @@
     <script src="./js/libs/jquery.min.js" type="text/javascript"></script>
     <script src="./js/libs/jquery-ui.min.js" type="text/javascript"></script>
     <script src="./js/libs/moment.js" type="text/javascript"></script>
-
     <!-- bootstrap.js -->
     <script src="./js/bootstrap/app.js" type="text/javascript"></script>
     <script id="tinyhippos-injected">if (window.top.ripple) { window.top.ripple("bootstrap").inject(window, document); }</script>
